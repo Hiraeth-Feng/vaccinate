@@ -150,6 +150,31 @@ Itong website ay gawa ng mga boluntaryo ng [g0v](https://g0v.tw) civic hacker ne
 Ang impormasyon na nakikita mo sa website na ito ay galing sa mga web crawlers na naghahanap ng real-time na impormasyon galing sa mga website ng mga ospital sa Taiwan. Kailangan namin ang tulong ninyo para mapalago ang impormasyon na ito. Kung interesado kayo, pwede kayong sumali sa aming slack channel o i-fork ang aming code sa [GitHub](https://github.com/g0v/vaccinate).
 `;
 
+const th = `
+### ใครสามารถได้รับวัคซีนเพื่อป้องกันโรค COVID-19
+คุณสามารถรับวัคซีน COVID-19 ได้โดยไม่เสียค่าใช้จ่าย หากคุณอยู่ในกลุ่มเป้าหมายการรับวัคซีนซึ่งกำหนดโดยรัฐบาลไต้หวัน
+
+### ฉันสามารถรับวัคซีนโดยเสียค่าใช้จ่ายด้วยตนเองได้หรือเปล่า
+ปัจจุบันการรับวัคซีนโดนเสียค่าใช้ด้วยตนเองสำหรับผู้ที่มีความประสงค์จะเดินทางถูก ยกเลิก ตั้งแต่วันที่ 15 พฤษภา 2021 ตามนโยบายของศูนย์ควบคุมโรคระบาดแห่งชาติ
+หากคุณได้รับวัคซีนโดสแรกแล้ว สามารถติดต่อโรงพยาบาลของคุณเพื่อรับวัคซีนโดสที่สองได้
+
+### ฉันสามารถใช้เว็บไซต์นี้ได้อย่างไร
+ค้นหาโรงพยาบาลในพื้นที่ที่อยู่อาศัยของคุณ หากแถบสถานะทางด้านขวาแสดงว่า "ว่าง" ท่านสามารถติดต่อเพื่อนัดหมายการรับวัคซีนเพื่อป้องกัน COVID-19 ได้
+หากแถบแสดงสถานะแสดงว่า "ไม่ว่าง" หมายถึง โรงพยาบาลดังกล่าวยังไม่เปิดให้นัดหมายเพื่อรับวัคซีน
+หากแถบแสดงสถานะแสดงว่า "ไม่มีข้อมูล" หมายถึง ไม่มีข้อมูลในระบบ กรุณาติดต่อโรงพยาบาลโดยตรงด้วยการคลิ๊ก "ลงทะเบียน"
+
+### ฉันจะหาข้อมูลเพิ่มเติมได้อย่างไร
+คำถามที่พบบ่อยโดยศูนย์ควบคุมโรคระบาดไต้หวัน (https://www.cdc.gov.tw/File/Get/rJJ09nktKU7btX_ZTEo_4w)
+
+### ใครเป็นผู้สร้างเว็บไซต์นี้
+เว็บไซต์นี้ถูกสร้างโดยกลุ่มจิตอาสาและเครือข่ายแฮคเกอร์ประชาชน the g0v โดยไม่ได้มีความเกี่ยวข้องกับรัฐบาลไต้หวัน และ ไม่ใช่แหล่งข้อมูลทางการ
+สำหรับข้อมูลอย่างเป็นทางการ กรุณาตรวจสอบที่เว็บไซต์ศูนย์ควบคุมโรคระบาดกลาง ไต้หวัน (https://cdc.gov.tw)
+
+### ฉันจะสามารถช่วยเหลือได้อย่างไร
+เว็บไซต์นี้อ้างอิงจากการรวบรวมข้อมูลเว็บไซต์โรงพยาบาลแบบเรียลไทม์ พวกเรายังต้องการความช่วยเหลือสำหรับส่วนที่เหลือ
+ร่วมเป็นส่วนหนึงกับเรา the g0v ที่[GitHub](https://github.com/g0v/vaccinate)
+`;
+
 function getContent(language: string): string {
   switch (language) {
     case 'enUS':
@@ -162,6 +187,8 @@ function getContent(language: string): string {
       return ja;
     case 'ph':
       return ph;
+    case 'th':
+      return th;
     default:
       return zhTW;
   }
